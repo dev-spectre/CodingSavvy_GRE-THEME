@@ -165,7 +165,7 @@ export default function Home() {
           />
         </section>
 
-        <section id="instructor" className="scroll-mt-6">
+        <section id="instructor" className="scroll-mt-16">
           <article className="px-fluid-container min-h-[450px] bg-white py-12 sm:pt-21">
             <div className="flex flex-wrap-reverse justify-center gap-8">
               <div className="flex aspect-[2.05/1] max-h-72 justify-center overflow-hidden rounded-xl">
