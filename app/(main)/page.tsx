@@ -1,5 +1,5 @@
 import { TestimonialCarousel } from "@/components/Animations";
-import { Button, ButtonLink } from "@/components/Button";
+import { ButtonLink } from "@/components/Button";
 import { CourseFeaturesCard, InfoCard } from "@/components/Cards";
 import { LeadGenerationForm } from "@/components/Forms";
 import Hero from "@/components/Hero";
