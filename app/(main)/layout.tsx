@@ -37,8 +37,8 @@ const urbanist = Urbanist({
 });
 
 export const metadata: Metadata = {
-  title: "GRE",
-  description: "World's Most Affordable Complete GRE Prep at 599/- per month.",
+  title: "Coding Savvy",
+  description: "Placement-first coding bootcamps for students.",
 };
 
 export default function RootLayout({

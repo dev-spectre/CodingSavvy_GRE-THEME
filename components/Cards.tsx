@@ -25,24 +25,23 @@ export function InfoCard({ title, description, imgSrc }: InfoCardProps) {
 
 export function CourseFeaturesCard() {
   const features = [
-    "30+ Pre-Recorded Beginner Vidoes (Quant)",
-    "24 Pre-Recorded Classes (12 Quant, 12 Verbal) 2 hours each.",
-    "Full Study Material (1000+ Questions).",
-    "Video solutions for all questions.",
-    "2 Full Length Adaptive Mock Tests.",
-    "1200 words vocab list.",
-    "3 Live doubt sessions every week.",
-    "1 month and 2 months study plan.",
+    "Placement Supreme - 6 month flagship with placement assistance.",
+    "Internship Program with project-based learning.",
+    "Java Full Stack Development curriculum.",
+    "DevOps bootcamp covering CI/CD and cloud basics.",
+    "Mobile App Development track.",
+    "Languages: C++, Java, TypeScript, JavaScript, Spring Boot, Next.js, Node.js.",
+    "Recorded sessions + live support and free career mentorship.",
+    "MOU with 5+ colleges; 1000+ learners, 100+ placements.",
   ];
 
   return (
     <article className="font-inter inline-block rounded-3xl bg-white px-32 py-12 text-lg font-[400] shadow-lg shadow-[#1B438F4D]">
       <h2 className="font-roboto text-4xl font-[900] text-[#1B438F] uppercase">
-        GRE 330 Course
+        Coding Savvy Programs
       </h2>
       <p className="font-[600] capitalize">
-        World's most affordable complete <span className="uppercase">GRE</span>{" "}
-        prep
+        Coding bootcamps built to get you job-ready
       </p>
 
       <ul className="my-8">
@@ -67,7 +66,7 @@ export function CourseFeaturesCard() {
 interface TestimonialCardProps {
   title: string;
   description: string;
-  greScore: number | `${number}`;
+  greScore: string | number;
   name: string;
   linkedin: string;
   designation: string;
@@ -105,7 +104,7 @@ export function TestimonialCard({
           {description}
         </p>
         <div className="mb-3.5 flex gap-13 text-[#1B438F]">
-          <p className="text-4xl font-[900]">{greScore}/330</p>
+          <p className="text-4xl font-[900]">Outcome: {greScore}</p>
           <a href={linkedin}>
             <img src="/icons/linkedin.svg" alt="LinkedIn" />
           </a>

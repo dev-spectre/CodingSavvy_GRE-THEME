@@ -17,8 +17,8 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
-  title: "GRE",
-  description: "World's Most Affordable Complete GRE Prep at 599/- per month.",
+  title: "Coding Savvy",
+  description: "Placement-first coding bootcamps for students.",
 };
 
 export default function DashboardLayout({
@@ -36,7 +36,7 @@ export default function DashboardLayout({
         <div className="mt-4.5 mr-4 flex items-center justify-between rounded-md border border-[#E5E5E5] bg-white px-5 py-5">
           <Link href={"/"}>
             <h1 className="font-poetsen-one text-xl font-[400] text-[#1B438F]">
-              GRE NextEra
+              Coding Savvy
             </h1>
           </Link>
           <div className="flex items-center gap-3">

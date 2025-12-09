@@ -5,7 +5,7 @@ export default function Navbar() {
     <div className="fixed top-0 right-0 left-0 z-30 backdrop-blur">
       <nav className="container mx-auto flex justify-between px-5 py-6 text-white">
         <Link href="/" className="font-roboto text-2xl font-[900]">
-          GRE NextEra
+          Coding Savvy
         </Link>
         <ul className="font-inter flex gap-12 text-2xl font-[600]">
           <li>
@@ -46,7 +46,7 @@ export function FooterNav() {
       <footer className="bg-black/15 px-36 pt-13 text-white backdrop:blur">
         <div className="flex items-center justify-between border-b border-b-white pb-8">
           <Link href="/" className="font-poppins text-2xl font-[400]">
-            GRE NextEra
+            Coding Savvy
           </Link>
           <ul className="flex gap-8">
             <li>
@@ -91,7 +91,7 @@ export function FooterNav() {
           </div>
           <div>
             <h4 className="font-inter text-xl font-[500]">Mail</h4>
-            <p className="text-xl text-[#A19FBA]">contact@gre.com</p>
+            <p className="text-xl text-[#A19FBA]">hello@codingsavvy.com</p>
           </div>
           <div>
             <h4 className="font-inter text-xl font-[500] uppercase">

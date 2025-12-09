@@ -9,41 +9,24 @@ import Hero from "@/components/Hero";
 
 export default function Home() {
   const tableData = [
-    ["Micro-Batch size for personalized attention.", "1:1 Private Classes"],
     [
-      "12+12 Live Classes (Quant & Verbal, 2 hours each).",
-      "24 Pre-Recorded Classes (12 Quant, 12 Verbal) 2 hours each.",
+      "Placement Supreme - 6 month intensive flagship program.",
+      "Placement assistance with mock interviews and job prep.",
     ],
     [
-      "30+ Pre-Recorded Beginner Videos (Quant).",
-      "30+ Pre-Recorded Beginner Videos (Quant).",
+      "Internship Program with project-based learning.",
+      "Real-world sprints, case studies, and portfolio building.",
     ],
     [
-      "Full Study Material (1000+ Questions).",
-      "Full Study Material (1000+ Questions).",
+      "Java Full Stack, DevOps, and Mobile App Development tracks.",
+      "Recorded sessions plus live support for every cohort.",
     ],
     [
-      "Video solutions for all questions.",
-      "Video solutions for all questions.",
+      "Languages & stacks: C++, Java, TypeScript, JavaScript, Spring Boot, Next.js, Node.js.",
+      "Free career mentorship and resume reviews.",
     ],
-    [
-      "2 Full Length Adaptive Mock Tests.",
-      "2 Full Length Adaptive Mock Tests.",
-    ],
-    ["1200 words vocab list.", "1200 words vocab list."],
-    ["Vocab quizzes.", "Vocab quizzes."],
-    [
-      "Continuous counselling and evaluation.",
-      "Continuous counselling and evaluation.",
-    ],
-    [
-      "Unlimited doubt clearing sessions",
-      "4 days a week classes customized on your convenience (1 hr each).",
-    ],
-    [
-      "1 year validity (Repeat batches as many times you want).",
-      "Study plan customized to students needs.",
-    ],
+    ["MOU with 5+ colleges.", "1000+ students trained."],
+    ["100+ students placed.", "Community support that continues after graduation."],
   ];
 
   return (
@@ -69,16 +52,16 @@ export default function Home() {
                       </p>
                     </div>
                     <p className="absolute top-37 -right-10 rounded-full bg-[#CCE5FE] px-3 py-2 text-[#16416B]">
-                      1000+ students
+                      1000+ learners trained
                     </p>
                   </div>
                   <p className="absolute bottom-15 left-50 inline-block min-w-72 rounded-full bg-[#EFF7E2] px-3 py-2 text-center text-[#3C6C26]">
-                    Founder, Millionare GRE
+                    Founder, Coding Savvy
                   </p>
                 </div>
               </div>
               <p className="absolute top-10 left-35 rounded-full bg-[#F8EFE2] px-3 py-2 text-[#A1631C] capitalize">
-                GRE score: 337/340
+                100+ students placed
               </p>
             </div>
             <div className="z-10 flex flex-grow justify-end">
@@ -87,30 +70,30 @@ export default function Home() {
           </section>
           <section id="about" className="container mx-auto mt-44 px-5 pb-5">
             <h2 className="font-roboto mb-20 text-4xl font-[900] text-[#1B438F] capitalize">
-              Why join millionare GRE?
+              Why choose Coding Savvy?
             </h2>
             <div className="flex flex-wrap items-start justify-center gap-6 lg:min-h-[390px]">
               <InfoCard
-                title="Realistic Strategies"
-                description="No fluff, just proven techniques that work."
+                title="Placement Supreme"
+                description="Flagship 6-month bootcamp with placement assistance."
                 imgSrc="/images/chess-fill.svg"
               />
               <div className="self-end">
                 <InfoCard
-                  title="Beginner Friendly"
-                  description="A supportive environment for all skill levels."
+                  title="Career Mentorship"
+                  description="Free mentorship, mock interviews, and resume support."
                   imgSrc="/images/star-badge.svg"
                 />
               </div>
               <InfoCard
-                title="Comprehensive"
-                description="Covers everything you need, nothing you don't."
+                title="Recorded + Live Learning"
+                description="Recorded sessions plus live support and internship paths."
                 imgSrc="/images/book-education.png"
               />
               <div className="self-end">
                 <InfoCard
-                  title="Affordable"
-                  description="High quality prep at a fair price."
+                  title="College Partnerships"
+                  description="MOU with 5+ colleges; 1000+ learners and 100+ placements."
                   imgSrc="/images/money-bag.png"
                 />
               </div>
@@ -127,10 +110,10 @@ export default function Home() {
             <thead>
               <tr>
                 <th className="font-roboto pb-8 text-start text-4xl font-[900] text-[#1B438F]">
-                  Online live Classes
+                  Programs & Tracks
                 </th>
                 <th className="font-roboto pb-8 text-start text-4xl font-[900] text-[#1B438F]">
-                  Private Personalized Tutoring
+                  Career Outcomes
                 </th>
               </tr>
             </thead>
@@ -153,10 +136,10 @@ export default function Home() {
 
               <tr>
                 <td className="py-8 pr-2.5 text-white">
-                  <Button label="Know more" />
+                  <Button label="Apply now" />
                 </td>
                 <td className="py-6 pl-2.5">
-                  <Button label="Know more" bgColor="#fff" />
+                  <Button label="Download brochure" bgColor="#fff" />
                 </td>
               </tr>
             </tbody>
@@ -170,32 +153,32 @@ export default function Home() {
         <div className="absolute bottom-10 left-0 -translate-x-[90%] scale-[0.95]">
           <TestimonialCard
             imgSrc="/images/victoria.jpg"
-            title="Best Course for GRE exams"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices"
-            greScore={328}
-            designation="Standford Odio Co."
-            name="Victoria Wotton"
+            title="Career-ready in 6 months"
+            description="Placement Supreme kept me accountable and made interviews feel effortless."
+            greScore="SWE offer @ FinTech Co."
+            designation="Software Engineer"
+            name="Ananya Sharma"
             linkedin=""
           />
         </div>
         <TestimonialCard
           imgSrc="/images/victoria.jpg"
-          title="Best Course for GRE exams"
-          description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices"
-          greScore={328}
-          designation="Standford Odio Co."
-          name="Victoria Wotton"
+          title="From campus to offer letter"
+          description="Coding Savvy's mentorship and mock interviews helped me land my first dev role."
+          greScore="Placed @ product startup"
+          designation="Full Stack Developer"
+          name="Rohan Verma"
           linkedin=""
           caption={true}
         />
         <div className="absolute right-0 bottom-10 translate-x-[90%] scale-[0.95]">
           <TestimonialCard
             imgSrc="/images/victoria.jpg"
-            title="Best Course for GRE exams"
-            description="Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quis ipsum suspendisse ultrices"
-            greScore={328}
-            designation="Standford Odio Co."
-            name="Victoria Wotton"
+            title="Hands-on learning that translates to jobs"
+            description="The projects and recorded sessions meant I could learn anytime and still ship."
+            greScore="Offer @ SaaS company"
+            designation="Mobile Developer"
+            name="Mehak Singh"
             linkedin=""
           />
         </div>
