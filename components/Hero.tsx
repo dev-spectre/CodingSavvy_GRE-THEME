@@ -5,28 +5,26 @@ export default function Hero() {
   return (
     <div className="bg-gradient-to-b from-[#081329] to-[#1b428e]">
       <section className="px-fluid-container grid-cols-5 items-center justify-between text-white md:min-h-[83lvh] lg:grid">
+        {/* hero text */}
         <header className="col-span-3 mb-12 w-full pt-16 lg:mb-0 lg:pt-0">
           <h1 className="text-hero mb-2 leading-[1.125] font-[900] text-[#FF9053] uppercase">
-            GRE Universe <div>course</div>
+            Coding Savvy <div>Bootcamps</div>
           </h1>
-          <p className="text-lg-0 mb-3.5 max-w-[95%] leading-tight font-[600] text-balance">
-            Your Entire GRE Universe In One Course — Everything You Need,
-            Nothing You Don't.
+          <p className="text-lg-0 mb-3.5 max-w-[95%] leading-tight font-[600] text-pretty">
+            Placement-first coding bootcamp platform for students 6-month
+            flagship Placement Supreme with placement assistance.
           </p>
-          <p className="text-fluid-base-0 text-base-0 mb-2.5 block font-[400]">
-            At ₹5,990/- for 3 months.
-          </p>
-          <div className="text-sm-0 w-[40%] max-w-64">
-            <ButtonLink href="/#request-demo-form" label="Enroll now" />
+          <div className="text-sm-0 flex w-[40%] max-w-lg gap-4">
+            <ButtonLink href="/#request-demo-form" label="Apply now" />
+            <ButtonLink
+              href="/#request-demo-form"
+              label="View programs"
+              bgColor="#132E64"
+            />
           </div>
-          <Link
-            className="text-sm-0 pretty mt-5 inline-block italic hover:underline"
-            href="/#private-personalised-tutoring"
-          >
-            Need personal tutoring? Learn about one-to-one
-          </Link>
         </header>
-        <div className="col-span-2 pb-16 text-center lg:mb-0 lg:pb-0">
+        {/* hero image */}
+        {/* <div className="col-span-2 pb-16 text-center lg:mb-0 lg:pb-0">
           <div className="px-sm mx-auto max-w-[500px]">
             <div className="relative mb-5 flex aspect-square items-center justify-center rounded-full">
               <div className="flex h-[70%] w-[70%] items-start justify-center overflow-hidden rounded-full">
@@ -77,7 +75,7 @@ export default function Hero() {
           >
             Punit Mishra GRE: 337/340
           </a>
-        </div>
+        </div> */}
       </section>
     </div>
   );
