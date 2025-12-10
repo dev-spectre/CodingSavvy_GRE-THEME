@@ -15,14 +15,6 @@ export default function Home() {
     "Complete Study Material",
   ];
 
-  const about = [
-    "GRE Score: 337",
-    "Perfect 170 In Quant—Three Consecutive Times",
-    "4+ Years of GRE Teaching Experience",
-    "Mentored Over 1,200 Students",
-    "99th Percentile In CAT; Admitted to Multiple IIMs",
-  ];
-
   const testimonialsData = [
     {
       imgSrc: "/images/siddharth.webp",
