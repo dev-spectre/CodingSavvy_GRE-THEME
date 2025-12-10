@@ -34,23 +34,23 @@ export function Card({ children }: CardProps) {
 
 export function CourseFeaturesCard() {
   const features = [
-    "30 Beginner Videos for Quant",
-    "60+ Hours of Pre-Recorded Classes (Quant/Verbal)",
-    "Full Study Material (1000+ Questions)",
-    "2 Full-Length Adaptive Mock Tests",
-    "1200-Word Vocabulary List",
-    "1-Month and 3-Month Study Plans",
-    "Validity of 3 Months (Extendable)",
+    "Placement Supreme - 6 month flagship with placement assistance.",
+    "Internship Program with project-based learning.",
+    "Java Full Stack Development curriculum.",
+    "DevOps bootcamp covering CI/CD and cloud basics.",
+    "Mobile App Development track.",
+    "Languages: C++, Java, TypeScript, JavaScript, Spring Boot, Next.js, Node.js.",
+    "Recorded sessions + live support and free career mentorship.",
+    "MOU with 5+ colleges; 1000+ learners, 100+ placements.",
   ];
 
   return (
     <Card>
       <h2 className="text-xl-0 mb-3 text-center leading-tight font-[900] text-[#1B438F] uppercase">
-        GRE Universe Course
+        Coding Savvy Programs
       </h2>
       <p className="text-sm-0 sm:text-x text-center font-[600] text-pretty capitalize">
-        Your Entire GRE Universe In One Course — Everything You Need, Nothing
-        You Don't.
+        Coding bootcamps built to get you job-ready
       </p>
 
       <ul className="my-8">
@@ -66,7 +66,7 @@ export function CourseFeaturesCard() {
       </ul>
 
       <div className="text-sm-0 text-white">
-        <ButtonLink href="/#request-demo-form" label="Enroll now" />
+        <ButtonLink href="/#request-demo-form" label="Apply now" />
       </div>
     </Card>
   );
