@@ -110,15 +110,6 @@ export function FooterNav() {
                 />
               </Link>
             </li>
-            <li>
-              <Link href="#">
-                <img
-                  className="h-6 w-6 sm:h-7 sm:w-7"
-                  src="/icons/linkedin-nav.svg"
-                  alt="LinkedIn"
-                />
-              </Link>
-            </li>
           </ul>
         </div>
 
@@ -147,34 +138,18 @@ export function FooterNav() {
                 </li>
               </ul>
             </div>
-            <div>
-              <h4 className="mb-2 text-lg font-[500] uppercase md:text-xl">
-                Other Links
-              </h4>
-              <ul className="flex flex-wrap gap-3 text-base font-[400] text-[#A19FBA] md:text-lg">
-                <li>
-                  <Link href="/privacy">Privacy Policy</Link>
-                </li>
-                <li>
-                  <Link href="/terms">Terms and Conditions</Link>
-                </li>
-                <li>
-                  <Link href="/refund">Refund and Cancellation Policy</Link>
-                </li>
-              </ul>
-            </div>
           </div>
           <div className="flex flex-wrap gap-5 sm:flex-col">
             <div>
               <h4 className="mb-2 text-lg font-[500] md:text-xl">Mail</h4>
               <p className="text-base text-[#A19FBA] md:text-lg">
-                hello@codingsavvy.com
+                admin@codingsavvy.in
               </p>
             </div>
             <div>
               <h4 className="mb-2 text-lg font-[500] md:text-xl">Phone</h4>
               <p className="text-base font-[400] text-[#A19FBA] md:text-lg">
-                +91 - 9022 821 921
+                +91 - 7498 625 838
               </p>
             </div>
           </div>

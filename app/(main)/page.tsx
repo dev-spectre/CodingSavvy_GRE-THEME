@@ -3,6 +3,16 @@ import { ButtonLink } from "@/components/Button";
 import { CourseFeaturesCard, InfoCard } from "@/components/Cards";
 import { LeadGenerationForm } from "@/components/Forms";
 import Hero from "@/components/Hero";
+import Link from "next/link";
+
+const EnrollButton = ({ href, label }: { href: string; label: string }) => (
+  <Link
+    href={href}
+    className="mt-auto block w-full rounded-lg bg-gradient-to-r from-[#1B438F] to-[#132E64] py-3 text-center text-sm font-bold tracking-wider text-white uppercase shadow-md transition-all hover:-translate-y-0.5 hover:from-[#2B54A3] hover:to-[#1B438F] hover:shadow-lg"
+  >
+    {label}
+  </Link>
+);
 
 export default function Home() {
   const tableData = [
@@ -88,16 +98,128 @@ export default function Home() {
     },
   ];
 
+  const courseData = [
+    {
+      title: "JAVA Fundamentals",
+      price: "₹999",
+      features: ["Introduction to Java", "Basic Concepts", "Hands-On Coding"],
+      link: "https://forms.gle/R962pqs4W65peFsi6",
+    },
+    {
+      title: "Placement Preparation",
+      price: "₹4999",
+      features: [
+        "Java Fundamentals & OOPS",
+        "DSA & Algorithms",
+        "Core Subjects & Aptitude",
+        "Mock Interviews",
+      ],
+    },
+    {
+      title: "Full Stack Web Dev",
+      price: "₹7999",
+      features: [
+        "HTML, CSS & JavaScript",
+        "React JS & Node.js",
+        "MongoDB & PostgreSQL",
+        "AWS Cloud and Git",
+      ],
+    },
+    {
+      title: "Mobile App Dev",
+      price: "₹4999",
+      features: [
+        "Flutter Stack",
+        "Backend with Firebase",
+        "App Deployment",
+        "Marketing Strategies",
+      ],
+    },
+  ];
+
   return (
     <>
       <Hero />
       <main>
         <div className="grid grid-cols-1 place-items-center bg-gradient-to-b from-[#1b428e] to-[#e7ecf4]">
+          <section className="container mx-auto flex flex-col items-center justify-between gap-12 px-5 py-12 lg:flex-row lg:gap-0 lg:py-20">
+            {/* Left Content - Visual Stack */}
+            {/* Using w-full and flex to center it, but distinct sizing for mobile/tablet/desktop */}
+            <div className="relative isolate flex w-full flex-col items-center justify-center lg:block lg:w-1/2">
+              {/* Circle Wrapper: Responsive text size for em-based spacing if needed, 
+                but primarily using responsive padding on the children */}
+              <div className="relative z-0 flex items-center justify-center lg:-ml-20 lg:block">
+                {/* Layer 1 (Outermost) */}
+                <div className="inline-block rounded-full bg-black/5 p-3 sm:p-5 lg:p-8">
+                  {/* Layer 2 */}
+                  <div className="inline-block rounded-full bg-black/5 p-3 sm:p-5 lg:p-8">
+                    {/* Layer 3 */}
+                    <div className="inline-block rounded-full bg-black/5 p-3 sm:p-5 lg:p-8">
+                      {/* Layer 4 */}
+                      <div className="inline-block rounded-full bg-black/5 p-3 sm:p-5 lg:p-8">
+                        {/* Layer 5 (Innermost border) */}
+                        <div className="relative inline-block rounded-full bg-black/5 p-3 sm:p-5 lg:p-8">
+                          {/* Main Image Container - RESPONSIVE WIDTHS/HEIGHTS HERE */}
+                          {/* Mobile: 200px, Tablet: 300px, Desktop: 400px */}
+                          <div className="flex h-[200px] w-[200px] items-center justify-center overflow-hidden rounded-full bg-gray-200 shadow-2xl sm:h-[300px] sm:w-[300px] lg:h-[400px] lg:w-[400px]">
+                            <img
+                              className="object-cover"
+                              src="/images/coding-savvy.jpeg"
+                              alt="Coding Savvy"
+                            />
+                          </div>
+
+                          {/* Badge: Prof Punit */}
+                          <p className="absolute right-0 -bottom-[10%] z-10 rounded-full bg-white px-4 py-2 text-center text-xs font-[600] text-[#505866] shadow-lg sm:right-0 sm:bottom-10 sm:text-sm lg:-right-16 lg:bottom-14 lg:text-base">
+                            <span className="text-sm-0 block font-semibold">
+                              5
+                            </span>
+                            Courses
+                          </p>
+                        </div>
+
+                        {/* Badge: Students */}
+                        <p className="absolute top-[15%] right-[10%] rounded-full bg-[#CCE5FE] px-3 py-2 text-center text-xs font-medium text-[#16416B] shadow-sm sm:text-sm lg:text-base">
+                          <span className="text-sm-0 block font-semibold">
+                            50+
+                          </span>
+                          Schedules
+                        </p>
+                      </div>
+
+                      {/* Badge: Founder */}
+                      <p className="absolute bottom-5 left-[25%] w-max rounded-full bg-[#EFF7E2] px-3 py-2 text-center text-xs font-medium text-[#3C6C26] shadow-sm sm:text-sm lg:bottom-16 lg:text-base">
+                        <span className="text-sm-0 block font-semibold">
+                          10+
+                        </span>{" "}
+                        Trusted Tutors
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                {/* Badge: GRE Score */}
+                {/* Positioned absolutely relative to the main stack wrapper */}
+                <p className="absolute top-0 left-0 rounded-full bg-[#F8EFE2] px-3 py-2 text-center text-xs font-medium text-[#A1631C] capitalize shadow-sm sm:text-sm lg:top-10 lg:left-36 lg:text-base">
+                  <span className="text-sm-0 block font-semibold">300+</span>{" "}
+                  Success Stories
+                </p>
+              </div>
+            </div>
+
+            {/* Right Content - Form */}
+            <div
+              id="request-demo-form"
+              className="z-10 flex w-full scroll-mt-32 justify-center lg:w-1/2 lg:justify-end"
+            >
+              <LeadGenerationForm />
+            </div>
+          </section>
           <section
             id="about"
             className="px-fluid-container flex flex-col items-center lg:pb-5"
           >
-            <h2 className="text-xl-0 mb-10 text-center leading-tight font-[900] text-white capitalize md:mb-16 lg:mb-20">
+            <h2 className="text-xl-0 mb-10 text-center leading-tight font-[900] text-[#1B438F] capitalize md:mb-16 lg:mb-20">
               Why choose Coding Savvy?
             </h2>
             <div className="row-auto grid max-w-fit grid-cols-2 gap-3 md:gap-6 lg:grid-cols-4">
@@ -124,15 +246,12 @@ export default function Home() {
             </div>
           </section>
         </div>
-        <div
-          id="courses"
-          className="scroll-mt-5 bg-gradient-to-b from-[#e7ecf4] to-[#bec9df]"
-        >
+        <div className="bg-gradient-to-b from-[#e7ecf4] to-[#bec9df]">
           <div className="px-fluid-container flex items-center justify-center py-24 lg:min-h-[90vh]">
             <CourseFeaturesCard />
           </div>
 
-          <section className="bg-white pt-21 pb-16">
+          <section id="features" className="scroll-mt-32 bg-white pt-21 pb-16">
             <div className="px-fluid-container">
               {/* mobile view */}
               <div className="md:aria-hidden text-[#1F1D39] md:hidden">
@@ -154,7 +273,7 @@ export default function Home() {
                     ))}
                   </ul>
                   <div className="text-white">
-                    <ButtonLink href="#" label="Apply Now" />
+                    <ButtonLink href="#request-demo-form" label="Apply Now" />
                   </div>
                 </article>
                 <article className="w-full">
@@ -213,7 +332,7 @@ export default function Home() {
 
                   <tr>
                     <td className="py-8 pr-2.5 text-white">
-                      <ButtonLink href="#" label="Apply now" />
+                      <ButtonLink href="#request-demo-form" label="Apply now" />
                     </td>
                     <td className="py-6 pl-2.5">
                       <ButtonLink
@@ -228,8 +347,69 @@ export default function Home() {
             </div>
           </section>
         </div>
-      </main>
+        <section id="courses" className="bg-[#CFD7E8] py-20 lg:py-28">
+          <div className="px-fluid-container">
+            {/* Courses Grid */}
+            <div className="grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+              {courseData.map((course, index) => (
+                <div
+                  key={index}
+                  className={`group relative flex flex-col rounded-2xl bg-white p-8 shadow-lg transition-all duration-300 hover:-translate-y-2 hover:shadow-2xl`}
+                >
+                  {/* Header Group */}
+                  <div className="mb-6">
+                    <h3 className="flex min-h-[3rem] items-center text-xl leading-tight font-[800] text-[#1B438F]">
+                      {course.title}
+                    </h3>
 
+                    <div className="mt-4 flex items-baseline">
+                      <h4 className="text-3xl font-[900] text-[#1F1D39]">
+                        {course.price}
+                      </h4>
+                      {/* Optional: Add 'per course' or similar here if needed */}
+                    </div>
+                  </div>
+
+                  {/* Divider */}
+                  <hr className="mb-6 border-gray-100" />
+
+                  {/* Features List */}
+                  <ul className="mb-8 flex-1 space-y-4">
+                    {course.features.map((feature, i) => (
+                      <li
+                        key={i}
+                        className="flex items-start text-sm font-[600] text-gray-600"
+                      >
+                        <div className="mr-3 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#1B438F]/10">
+                          <svg
+                            className="h-3 w-3 text-[#1B438F]"
+                            fill="none"
+                            viewBox="0 0 24 24"
+                            stroke="currentColor"
+                            strokeWidth={3}
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              d="M5 13l4 4L19 7"
+                            />
+                          </svg>
+                        </div>
+                        <span className="leading-snug">{feature}</span>
+                      </li>
+                    ))}
+                  </ul>
+
+                  {/* Action Button */}
+                  <div className="text-white">
+                    <ButtonLink href="#request-demo-form" label="Enroll Now" />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      </main>
       <div className="bg-gradient-to-b from-[#1c4490] to-[#0f2247]">
         <section
           id="testimonials"
