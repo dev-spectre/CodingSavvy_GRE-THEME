@@ -294,9 +294,10 @@ export default function Home() {
                     ))}
                   </ul>
                   <ButtonLink
-                    href="#"
+                    href="/brouchre.pdf"
                     label="Download brochure"
                     bgColor="#fff"
+                    download="Coding Savvvy Brochure.pdf"
                   />
                 </article>
               </div>
@@ -336,9 +337,10 @@ export default function Home() {
                     </td>
                     <td className="py-6 pl-2.5">
                       <ButtonLink
-                        href="#"
+                        href="/brochure.pdf"
                         label="Download brochure"
                         bgColor="#fff"
+                        download="Coding Savvvy Brochure.pdf"
                       />
                     </td>
                   </tr>
