@@ -36,7 +36,7 @@ export default function Hero() {
             <span className="hidden h-1 w-1 rounded-full bg-[#E5E7EB]/60 sm:inline-block" />
             <div className="flex items-baseline gap-1">
               <span className="text-lg font-[900] text-white">50+</span>
-              <span className="uppercase tracking-wide">Hiring Companies</span>
+              <span className="uppercase tracking-wide">Companies</span>
             </div>
           </div>
         </header>
