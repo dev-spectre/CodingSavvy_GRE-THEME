@@ -287,7 +287,10 @@ export default function Home() {
             </div>
 
             {/* Form */}
-            <div id="request-demo-form" className="col-span-2 flex items-center justify-center scroll-mt-36">
+            <div
+              id="request-demo-form"
+              className="col-span-2 flex scroll-mt-36 items-center justify-center"
+            >
               <LeadGenerationForm />
             </div>
           </section>
@@ -296,7 +299,7 @@ export default function Home() {
             id="about"
             className="px-fluid-container flex flex-col items-center lg:pb-5"
           >
-            <h2 className="text-xl-0 mb-10 mt-6 text-center leading-tight font-[900] text-[#1B438F] capitalize md:mb-16 lg:mb-20">
+            <h2 className="text-xl-0 mt-6 mb-10 text-center leading-tight font-[900] text-[#1B438F] capitalize md:mb-16 lg:mb-20">
               Why choose Coding Savvy?
             </h2>
             <div className="row-auto grid max-w-fit grid-cols-2 gap-3 md:gap-6 lg:grid-cols-4">
@@ -494,7 +497,7 @@ export default function Home() {
         </section>
         <section
           id="placements"
-          className="font-montserrat relative overflow-hidden bg-gradient-to-b from-[#CFD7E8] to-[#eef2f6] pt-0 py-20 lg:pt-14 lg:pb-24"
+          className="font-montserrat relative scroll-mt-16 overflow-hidden bg-gradient-to-b from-[#CFD7E8] to-[#eef2f6] py-20 pt-0 lg:pt-14 lg:pb-24"
         >
           <div className="px-fluid-container">
             <h2 className="text-xl-0 mb-10 text-center leading-tight font-[900] text-[#1B438F] capitalize md:mb-16 lg:mb-20">
@@ -513,9 +516,9 @@ export default function Home() {
                       <h3 className="text-xl font-[900] tracking-tight text-[#081329]">
                         {item.company}
                       </h3>
-                      <div className="mt-2 h-1 w-8 rounded-full bg-[#1B438F] opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
+                      <div className="h-1 w-8 rounded-full bg-[#1B438F] sm:opacity-0 transition-opacity duration-300 group-hover:opacity-100"></div>
                     </div>
-                    <div className="rounded-full border border-[#1B438F]/10 bg-[#eef4ff] px-4 py-1.5 text-sm font-[800] tracking-wide text-[#1B438F] shadow-sm transition-colors duration-300 group-hover:bg-[#1B438F] group-hover:text-white">
+                    <div className="rounded-full border border-[#1B438F]/10 bg-[#1B438F] px-4 py-1.5 text-sm font-[800] tracking-wide text-white shadow-sm transition-colors duration-300 group-hover:bg-[#1B438F] group-hover:text-white sm:bg-[#eef4ff] sm:text-[#1B438F]">
                       {item.package}
                     </div>
                   </div>
@@ -523,13 +526,13 @@ export default function Home() {
                   {/* Middle Section: Quote */}
                   <div className="relative mb-8">
                     {/* Quote Icon */}
-                    {/* <svg
+                    <svg
                       className="absolute -top-3 -left-2 h-8 w-8 -scale-x-100 transform text-gray-300 opacity-40 transition-colors group-hover:text-[#1B438F]/20"
                       fill="currentColor"
                       viewBox="0 0 24 24"
                     >
                       <path d="M14.017 21L14.017 18C14.017 16.896 14.321 15.923 14.929 15.081C15.537 14.239 16.307 13.62 17.239 13.224L17.239 12C16.887 12 16.486 11.97 16.036 11.91C14.796 11.75 13.796 11.19 13.036 10.23C12.276 9.27 11.896 8.09 11.896 6.69L11.896 3L21.017 3L21.017 11.58C21.017 14.46 20.212 16.71 18.602 18.33C16.992 19.95 14.797 21 12.017 21L12.017 18L14.017 21ZM5.01697 21L5.01697 18C5.01697 16.896 5.32097 15.923 5.92897 15.081C6.53697 14.239 7.30697 13.62 8.23897 13.224L8.23897 12C7.88697 12 7.48597 11.97 7.03597 11.91C5.79597 11.75 4.79597 11.19 4.03597 10.23C3.27597 9.27 2.89597 8.09 2.89597 6.69L2.89597 3L12.017 3L12.017 11.58C12.017 14.46 11.212 16.71 9.60197 18.33C7.99197 19.95 5.79697 21 3.01697 21L3.01697 18L5.01697 21Z" />
-                    </svg> */}
+                    </svg>
                     <p className="relative z-10 pl-1 text-[0.95rem] leading-relaxed font-medium text-gray-600 italic">
                       "{item.quote}"
                     </p>
@@ -537,11 +540,11 @@ export default function Home() {
 
                   {/* Bottom Section: Name only (Bigger) */}
                   <div className="border-t border-gray-200 pt-6 transition-colors group-hover:border-[#1B438F]/20">
-                    <div className="flex flex-col">
-                      <span className="text-lg font-[900] text-[#1B438F]">
+                    <div className="flex flex-col text-[#1B438F]">
+                      <span className="text-lg font-[900]">
                         {item.name}
                       </span>
-                      <span className="text-[10px] font-bold tracking-widest text-gray-400 uppercase transition-colors group-hover:text-[#1B438F]">
+                      <span className="text-[10px] font-bold tracking-widest sm:text-gray-400 uppercase transition-colors group-hover:text-[#1B438F]">
                         {item.role}
                       </span>
                     </div>

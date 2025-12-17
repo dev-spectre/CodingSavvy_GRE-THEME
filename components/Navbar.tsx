@@ -13,8 +13,8 @@ export default function Navbar() {
     },
     { href: "/#placements", label: "Placements" },
     { href: "/#features", label: "Features" },
-    { href: "/#testimonials", label: "Testimonial" },
-    { href: "/#request-demo-form", label: "Contact" },
+    { href: "/#testimonials", label: "Testimonials" },
+    { href: "/placement", label: "Jobs" },
   ];
 
   return (
@@ -89,7 +89,7 @@ export default function Navbar() {
 
 export function FooterNav() {
   return (
-    <div className="bg-gradient-to-b from-[#0f2247] to-[#0B172D]">
+    <div className="z-60 bg-gradient-to-b from-[#0f2247] to-[#0B172D]">
       <footer className="px-fluid-container bg-black/15 pt-13 text-white backdrop:blur sm:px-8 md:px-12 lg:px-36">
         {/* Header */}
         <div className="mb-5 flex items-center justify-between border-b border-b-white pb-8">
@@ -129,13 +129,17 @@ export function FooterNav() {
                   <Link href={"/#courses"}>Courses</Link>
                 </li>
                 <li>
+                  <Link href={"/#placement"}>Placements</Link>
+                </li>
+
+                <li>
                   <Link href={"/#private-personalised-tutoring"}>Features</Link>
                 </li>
                 <li>
                   <Link href={"/#testimonials"}>Testimonials</Link>
                 </li>
                 <li>
-                  <Link href={"/#instructor"}>Contact</Link>
+                  <Link href={"/placement"}>Jobs</Link>
                 </li>
               </ul>
             </div>
