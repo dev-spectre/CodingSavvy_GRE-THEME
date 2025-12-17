@@ -42,7 +42,7 @@ export default function Hero() {
         </header>
 
         {/* hero image - Replaced with stylized CSS composition */}
-        <div className="col-span-2 relative flex items-center justify-center pb-16 lg:pb-0 mt-7">
+        <div className="col-span-2 relative ml-3 flex items-center justify-center pb-16 lg:pb-0 mt-7">
           
           {/* 1. Ambient Background Glows */}
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[300px] h-[300px] bg-[#1b428e] rounded-full blur-[80px] opacity-60"></div>
