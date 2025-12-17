@@ -287,7 +287,7 @@ export default function Home() {
             </div>
 
             {/* Form */}
-            <div className="col-span-2 flex items-center justify-center">
+            <div id="request-demo-form" className="col-span-2 flex items-center justify-center scroll-mt-36">
               <LeadGenerationForm />
             </div>
           </section>
